@@ -1,0 +1,28 @@
+#include <iostream>
+#include <algorithm>
+ 
+using namespace std;
+
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+ 
+    #ifndef ONLINE_JUDGE
+        freopen("input.txt", "r", stdin);
+        freopen("output.txt", "w", stdout);
+    #endif
+    
+    int tc, n, arr[50];
+    cin >> tc;
+
+    while (tc--) {
+        cin >> n;
+        for (int i = 0; i < n; ++i) {
+            cin >> arr[i];
+        }
+        cout << *max_element(arr, arr + n) - *min_element(arr, arr + n) << endl;
+    }
+    
+    return 0;
+}
