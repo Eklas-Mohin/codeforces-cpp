@@ -12,7 +12,7 @@ int main() {
     #endif
 
     int n, ans = -1, k, arr[100005];
-    
+
     cin >> n;
     for (int i = 0; i < n; ++i) {
         cin >> arr[i];
@@ -30,3 +30,4 @@ int main() {
 
     return 0;
 }
+
