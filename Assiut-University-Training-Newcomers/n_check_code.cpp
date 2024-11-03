@@ -17,7 +17,7 @@ int main() {
     cin >> a >> b >> str;
 
     if (str[a] != '-') {
-        cout << "NO" << endl;
+        cout << "No" << endl;
         return 0;
     } else {
         for (int i = 0; i < str.length(); ++i) {
@@ -25,13 +25,13 @@ int main() {
                 continue;
             }
             if (str[i] < 48 || str[i] > 57) {
-                cout << "NO" << endl;
+                cout << "No" << endl;
                 return 0;
             }
         }
     }
 
-    cout << "YES" << endl;
+    cout << "Yes" << endl;
     
     return 0;
 }
